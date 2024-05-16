@@ -7,7 +7,7 @@ a1={2, 3, 4, 5, 6}
 a2={1, 2, 4, 5}
 a3={0, 1, 5, 7, 2, 4}
 
-#equations to find intersection values 
+#Equations to find intersection values 
 region_1 = a1-a2-a3
 region_2 = a1.intersection(a2) - a3
 region_3 = a2-a1-a3

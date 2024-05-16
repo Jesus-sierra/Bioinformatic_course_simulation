@@ -1,0 +1,27 @@
+#intercept_loop.py
+#This script processes sets of numbers and generates a report with interceptions
+#Author: Jesus Sierra
+#Date: 2024-05-16
+
+a1={2, 3, 4, 5, 6}
+a2={1, 2, 4, 5}
+a3={0, 1, 5, 7, 2, 4}
+
+#equations to find intersection values 
+region_1 = a1-a2-a3
+region_2 = a1.intersection(a2) - a3
+region_3 = a2-a1-a3
+region_4 = a3-a1-a2
+region_5 = a2.intersection(a3) - a1
+region_6 = a1.intersection(a3) - a2
+region_7 = a1.intersection(a2, a3)
+
+x = [region_1, region_2, region_3, region_4, region_5, region_6, region_7]
+
+print("Oi, temos os seguintes resultados:")
+
+#Loop for print statements
+for i in range(len(x)):
+    print(f'Região {i+1}: {x[i]}')
+
+#End of code
